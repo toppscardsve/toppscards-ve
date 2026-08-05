@@ -335,8 +335,8 @@ footer a{color:#e63946}
 
 <script>
 (function(){
-var PROD='toppscards_products',CART='toppscards_cart',WA='toppscards_whatsapp',VER='toppscards_seed_ver',SEED_VER=29,PASS='123',filter='all';
-function gp(){try{return JSON.parse(localStorage.getItem(PROD))||[]}catch(e){return[]}}
+var PROD='toppscards_products',CART='toppscards_cart',WA='toppscards_whatsapp',VER='toppscards_seed_ver',SEED_VER=30,PASS='123',filter='all';
+function gp(){var a=[];try{a=JSON.parse(localStorage.getItem(PROD))||[]}catch(e){a=[]}if(!Array.isArray(a))a=[];a=a.filter(function(x){return x&&x.id&&x.name});return a}
 function sp(p){localStorage.setItem(PROD,JSON.stringify(p))}
 function gc(){try{return JSON.parse(localStorage.getItem(CART))||[]}catch(e){return[]}}
 function sc(c){localStorage.setItem(CART,JSON.stringify(c))}

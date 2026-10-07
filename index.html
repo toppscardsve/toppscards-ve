@@ -48,7 +48,7 @@ nav a.active{color:#fff;background:#e63946}
 .preventa-info-body{padding:.85rem 1.25rem;font-size:.85rem;color:#78350f;line-height:1.6}
 .promo-carousel{position:relative;width:100%;overflow:hidden}
 .promo-carousel .track{display:flex;transition:transform .5s ease}
-.promo-carousel .track img{width:100%;flex-shrink:0;display:block;max-height:450px;object-fit:cover}
+.promo-carousel .track img{width:100%;flex-shrink:0;display:block;aspect-ratio:16/5;object-fit:cover;height:auto}
 .promo-carousel .arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.8);border:none;width:2.5rem;height:2.5rem;border-radius:50%;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:2;transition:all .2s}
 .promo-carousel .arrow:hover{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.2)}
 .promo-carousel .arrow-prev{left:1rem}
@@ -204,7 +204,7 @@ footer a{color:#e63946}
 <p>Tu tienda de cartas Topps en Venezuela. Explora y arma tu colecci&oacute;n.</p>
 </section>
 
-<div class="promo-carousel" id="promoCarousel"><div class="track"><img src="https://i.imgur.com/h7RV2zF.png" alt="Nuevas colecciones" loading="lazy"><img src="https://i.imgur.com/XGfJate.png" alt="Nuevas colecciones 2" loading="lazy"><img src="https://i.imgur.com/6Fgk1BJ.png" alt="Nuevas colecciones 3" loading="lazy"></div><button class="arrow arrow-prev" onclick="pc(-1)">&#8249;</button><button class="arrow arrow-next" onclick="pc(1)">&#8250;</button><div class="dots" id="pcDots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div></div>
+<div class="promo-carousel" id="promoCarousel"><div class="track"><img src="https://i.imgur.com/h7RV2zF.png" alt="Nuevas colecciones"><img src="https://i.imgur.com/XGfJate.png" alt="Nuevas colecciones 2" loading="lazy"><img src="https://i.imgur.com/6Fgk1BJ.png" alt="Nuevas colecciones 3" loading="lazy"></div><button class="arrow arrow-prev" onclick="pc(-1)">&#8249;</button><button class="arrow arrow-next" onclick="pc(1)">&#8250;</button><div class="dots" id="pcDots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div></div>
 
 <main class="page">
 

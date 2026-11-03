@@ -33,6 +33,8 @@ nav{display:flex;align-items:center;gap:.25rem;flex-wrap:wrap}
 nav a{padding:.4rem .75rem;font-size:.85rem;color:#555;transition:all .2s;border-radius:6px}
 nav a:hover{color:#e63946;background:rgba(230,57,70,.06)}
 nav a.active{color:#fff;background:#e63946}
+nav a#navFilterPREVENTA{background:linear-gradient(135deg,#ff3d00,#ff9100,#ffd54f,#ff3d00);background-size:300% 300%;color:#3b0a00;font-weight:700;border:1px solid rgba(255,193,7,.9);text-shadow:0 1px 0 rgba(255,255,255,.35);box-shadow:0 0 8px rgba(255,87,34,.85),0 0 18px rgba(255,152,0,.55),inset 0 0 6px rgba(255,235,59,.7);animation:fireGlow 1.8s ease-in-out infinite}
+nav a#navFilterPREVENTA:hover,nav a#navFilterPREVENTA.active{color:#3b0a00;background:linear-gradient(135deg,#ff5722,#ffa000,#ffe082,#ff5722);background-size:300% 300%;box-shadow:0 0 14px rgba(255,87,34,1),0 0 26px rgba(255,152,0,.75),inset 0 0 10px rgba(255,235,59,.9)}
 .cart-count{background:#e63946;color:#fff;font-size:.7rem;padding:1px 6px;border-radius:10px;vertical-align:top;margin-left:2px}
 .hero{text-align:center;padding:3rem 1rem 2rem;position:relative;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#fef2f2 100%)}
 .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Topps_Logo.svg/3840px-Topps_Logo.svg.png');background-size:120px auto;background-repeat:repeat;opacity:.06;animation:drifting 40s linear infinite;pointer-events:none}
@@ -165,7 +167,7 @@ footer a{color:#e63946}
 .badge{position:absolute;top:.5rem;left:.5rem;font-size:.65rem;font-weight:700;padding:3px 10px;border-radius:4px;z-index:2;text-transform:uppercase;letter-spacing:.5px}
 .badge-preventa{background:linear-gradient(135deg,#ff3d00,#ff9100,#ffd54f,#ff3d00);background-size:300% 300%;color:#3b0a00;border:1px solid rgba(255,193,7,.95);text-shadow:0 1px 0 rgba(255,255,255,.4);box-shadow:0 0 8px rgba(255,87,34,.85),0 0 18px rgba(255,152,0,.55),inset 0 0 6px rgba(255,235,59,.7);animation:fireGlow 1.8s ease-in-out infinite}
 @keyframes fireGlow{0%,100%{background-position:0% 50%;box-shadow:0 0 8px rgba(255,87,34,.85),0 0 18px rgba(255,152,0,.55),inset 0 0 6px rgba(255,235,59,.7);transform:translateY(0)}50%{background-position:100% 50%;box-shadow:0 0 16px rgba(255,87,34,1),0 0 30px rgba(255,152,0,.8),inset 0 0 12px rgba(255,235,59,1);transform:translateY(-1px)}}
-@media(prefers-reduced-motion:reduce){.badge-preventa{animation:none}}
+@media(prefers-reduced-motion:reduce){.badge-preventa{animation:none}nav a#navFilterPREVENTA{animation:none}}
 .badge-agotado{background:#dc2626;color:#fff}
 .badge-disponible{background:#16a34a;color:#fff}
 .modal-info .badge{position:static;display:inline-block;margin-left:.3rem}
